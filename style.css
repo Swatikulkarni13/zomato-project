@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: 'Merriweather', serif;
@@ -34,6 +35,7 @@ body {
     padding: 12px;
     border-radius: 6px;
     font-weight: bold;
+    border-left: 4px;
 }
 .button__primary:hover {
   border: 2px solid #ff6767;
@@ -47,19 +49,26 @@ body {
 
 .hero__image__container{
   width: 100%;
+  position: relative;
+  height: 100%
 }
 .hero__image{
+  position: absolute;
+  margin-top: 2rem;
   width: 100%;
+  right: auto;
+  left: auto;;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0 25px 10px -12px rgb(0 0 0 / 25%);
 }
 
 .hero__text {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 1.875rem;
   margin: 20px 0;
   color: #ld3557;
+  line-height: 2.25rem;
 
 
 }
@@ -92,10 +101,14 @@ body {
   margin: 20px;
 }
 @media (min-width: 768px) {
+
+
+
   .explore__menu__lists{
     margin-top: 60px;
     display: flex;
     gap: 15px;
+    padding:
   }
   .explore__menu__container{
     position: relative;
@@ -114,7 +127,7 @@ body {
       );
     z-index: -3;
     transform: skewY(-5deg);
-  
+
 
   }
   #pizza__card{
@@ -135,6 +148,12 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+.email__input {
+    width: 20rem;
+  }
+
+
   .container{
     max-width: 70%;
   }
@@ -155,5 +174,191 @@ body {
 }
 .explore__menu__text{
 font-size: 48px;
+}
+.restaurant__list__container{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 400px;
+
+
+}
+.restaurant__list__text{
+margin: 1rem 0;
+padding: 90px;
+}
+
+.text__x1{
+  font-size: 48px;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
+    align-items: center;
+
+
+}
+.restaurant__list__row_1 {
+
+    display: flex;
+    align-items: baseline;
+
+}
+.restaurant1{
+    border-radius: 6px;
+    margin: 0 5px;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  }
+.restaurant2{
+    border-radius: 6px;
+    margin: 0 5px;
+    width: 320px;
+    height: 250px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  }
+
+
+
+  .restaurant__list__row_2 {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+  }
+
+  .restaurant3{
+    padding-top: 15px;
+    border-radius: 6px;
+
+
+    width: 420px;
+    height: 240px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+  }
+  .restaurant4 {
+      border-radius: 6px;
+      margin-bottom: 8px;
+      margin-top: 8px;
+      margin-left: 3px;
+      width: 310px;
+      height: 220px;
+
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+
+  }
+
+
+
+.restaurant__list__text{
+margin: 1rem 0;
+padding: 90px;
+}
+.email__subcribe__container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+  }
+  .div{
+    display: block;
+  }
+  .email__input {
+    border: 5px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding:1rem;
+    border-radius: 4px;
+    margin-left: 700px;
+    margin-top: 20px;
+
+
+  }
+  .email__subcribe__input__field {
+     display: flex;
+     align-items: center;
+     padding-left: 730px;
+   }
+.text__x2{
+  font-size: 3.5rem;
+    line-height: 2rem;
+    color: #1d3557;
+    font-weight: 900;
+    align-items: center;
+    padding-left: 700px;
+
+
+}
+.button__primary {
+    margin: 10px;
+    padding: 0.5rem 1rem;
+    margin-left: 750px;
+    text-align: center;
+    text-transform: capitalize;
+    transition: 0.5s;
+    font-weight: 600;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 4px;
+    display: block;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+
+
+}
+.quote__container {
+    position: relative;
+    margin-top: 4rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    border-radius: 13px;
+    background: url(https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80) center center / cover no-repeat;
+}
+.quote__image__lay{
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+
+  .quote__image__text {
+   color: #FFF;
+    z-index: 3;
+    margin: 0 1rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+
+}
+footer {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-image: linear-gradient( to right, #ff512f 0%, #dd2476 51%, #ff512f 100% );
+  }
+  footer>img{
+    width: 300px;
+    height:250px;
+
+    filter: brightness(0) invert(1);
+}
+footer > ul {
+    margin-top: 3rem;
+    color: #fff;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 }
